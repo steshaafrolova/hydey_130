@@ -29,10 +29,7 @@ const CONFIG = {
 // MIDDLEWARE
 // ============================================
 
-app.use(cors({
-    origin: '*', // Для тесту дозволяємо всі домени
-    methods: ['GET', 'POST']
-}));
+app.use(cors());
 app.use(express.json());
 
 // Логування
