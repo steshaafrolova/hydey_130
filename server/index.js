@@ -19,7 +19,7 @@ const CONFIG = {
     // Програми та ціни (в рублях)
     programs: {
         sushka: { name: 'Сушка 21 день', price: 2500 },
-        marafon: { name: 'Марафон 30 дней', price: 1800 },
+        marafon: { name: 'Марафон 30 дней (SALE!)', price: 1500 },
         consult: { name: 'Консультация 60 мин', price: 800 },
         vip: { name: 'VIP Ведение 2 месяца', price: 5500 }
     }

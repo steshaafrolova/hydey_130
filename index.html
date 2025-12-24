@@ -1947,6 +1947,29 @@
             .faq-icon { width: 32px; height: 32px; font-size: 20px; }
             .faq-answer p { padding: 0 20px 18px; font-size: 14px; }
         }
+        /* SALE BADGE */
+.sale-badge {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background: #e74c3c;
+    color: white;
+    padding: 12px 20px;
+    font-weight: 800;
+    font-size: 14px;
+    border-radius: 15px 0 15px 0;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+    animation: pulse 2s ease-in-out infinite;
+    z-index: 10;
+}
+
+.old-price {
+    font-size: 16px;
+    color: #e74c3c;
+    text-decoration: line-through;
+    display: block;
+    margin-bottom: 2px;
+}
     </style>
 </head>
 <body>
@@ -2309,29 +2332,30 @@
             </div>
 
             <div class="program-card soft-bg reveal stagger-2">
-                <span class="program-badge">⭐ Популярный</span>
-                <div class="program-icon">🎯</div>
-                <h3 class="program-name">Марафон</h3>
-                <p class="program-duration">30 дней трансформации</p>
-                <p class="program-text">
-                    Классический марафон с мягким дефицитом. Идеально для новичков.
-                </p>
-                <ul class="program-features">
-                    <li>Персональный расчёт КБЖУ</li>
-                    <li>Меню на 30 дней</li>
-                    <li>Чат с участниками</li>
-                    <li>Еженедельные вебинары</li>
-                    <li>Гайд по срывам</li>
-                </ul>
-                <div class="program-footer">
-                    <div class="program-price">
-                        <span class="amount">1 800</span>
-                        <span class="currency">₽</span>
-                        <span class="old">2 500</span>
-                    </div>
-                    <button class="program-btn" onclick="selectProgram('marafon', 1800)">Выбрать</button>
-                </div>
-            </div>
+    <span class="program-badge">⭐ Популярный</span>
+    <div class="sale-badge">SALE</div>
+    <div class="program-icon">🎯</div>
+    <h3 class="program-name">Марафон</h3>
+    <p class="program-duration">30 дней трансформации</p>
+    <p class="program-text">
+        Классический марафон с мягким дефицитом. Идеально для новичков.
+    </p>
+    <ul class="program-features">
+        <li>Персональный расчёт КБЖУ</li>
+        <li>Меню на 30 дней</li>
+        <li>Чат с участниками</li>
+        <li>Еженедельные вебинары</li>
+        <li>Гайд по срывам</li>
+    </ul>
+    <div class="program-footer">
+        <div class="program-price">
+            <span class="old-price">2 500 ₽</span>
+            <span class="amount">1 500</span>
+            <span class="currency">₽</span>
+        </div>
+        <button class="program-btn" onclick="selectProgram('marafon', 1500)">Выбрать</button>
+    </div>
+</div>
 
             <div class="program-card mint-bg reveal stagger-3">
                 <div class="program-icon">💬</div>
@@ -2606,10 +2630,10 @@
                             <div class="name">Сушка</div>
                             <div class="price">2 500 ₽</div>
                         </div>
-                        <div class="program-select-card" data-program="marafon" data-price="1800" onclick="selectProgramCard(this)">
+                       <div class="program-select-card" data-program="marafon" data-price="1500" onclick="selectProgramCard(this)">
                             <div class="icon">🎯</div>
                             <div class="name">Марафон</div>
-                            <div class="price">1 800 ₽</div>
+                            <div class="price">1 500 ₽ <s style="color:#e74c3c;font-size:12px;">1800</s></div>
                         </div>
                         <div class="program-select-card" data-program="consult" data-price="800" onclick="selectProgramCard(this)">
                             <div class="icon">💬</div>
